@@ -1,0 +1,13 @@
+{
+  "precision": "FP16",
+  "engine_files_present": [
+    "ssd_mobilenet_v2_coco.uff.1.1.8201.GPU.FP16.engine"
+  ],
+  "still_frame_calls": 500,
+  "detect_call_ms_mean": 38.27,
+  "detect_call_ms_median": 38.26,
+  "detect_call_ms_p95": 38.41,
+  "detector_fps_from_calls": 26.1,
+  "tensorrt_network_ms_mean": 37.14,
+  "live_camera_loop_fps": 23.3
+}
