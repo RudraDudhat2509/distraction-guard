@@ -2,7 +2,7 @@
 
 A small desk box that watches for a phone. A camera feeds a Jetson Nano, the Nano looks for a person and a phone in every frame, and an Arduino turns the result into lights and a buzzer. Green is fine. Red plus a beep means phone.
 
-AI Lab project, IIT Bhilai. Team: Vatsal Yadav (lead), Rudra Dudhat, S Aparajith, Kanishk Nadeshwar.
+AI Lab project, IIT Bhilai. Team: Vatsal Yadav (lead), Rudra Dudhat, S Aparajith.
 
 ## How it works
 
@@ -93,6 +93,3 @@ Detection confidence threshold is 0.2, because at 0.5 the phone was almost never
 - The WebRTC stream crashes on this JetPack's GStreamer 1.14, so the live video is plain MJPEG over HTTP on port 8000.
 - The Nano boots from its built-in 16 GB storage, not an SD card.
 
-## Not done
-
-Tests C, D and E from the proposal (delay, a 50-trial accuracy count, lighting and distance and angle) were not run, and the Raspberry Pi comparison was skipped. The main weakness is phone recall: a phone is small in a wide-angle picture squeezed to 300 x 300, so the detector often misses it for a second or two.
